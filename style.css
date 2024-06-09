@@ -149,6 +149,20 @@ body {
         background-size: 375px 554px;
     }
 }
+@media only screen and (min-width: 321px) {
+    .container {
+        max-width: 300px;
+    }
+    .main input {
+        width: 180px;
+        padding: 15px;
+    }
+
+    .main button {
+        padding: 10px 25px;
+    }
+}
+
 @media only screen and (min-width: 375px) {
     .container {
         max-width: 300px;
