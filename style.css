@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 450px;
+    width: 480px;
     height: auto;
     background-color: transparent;
     backdrop-filter: blur(15px);
@@ -27,7 +27,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px;
+    padding: 20px 15px 20px 15px;
+    margin-block: 30px;
 }
 
 .header {
@@ -106,9 +107,9 @@ body {
     background-image: url("checked.png");
 }
 
-#list_container li span{
+#list_container li span {
     position: absolute;
-    right: 0;
+    left: 290px;
     top: 5px;
     width: 30px;
     height: 30px;
@@ -122,10 +123,9 @@ body {
     align-items: center;
 }
 
-#list_container li span:hover{
+#list_container li span:hover {
     background-color: #edeef0;
     color: #555;
-
 }
 
 @media only screen and (max-width: 320px) {
@@ -143,12 +143,19 @@ body {
     .main button {
         padding: 10px 20px;
     }
+
+    #list_container li span{
+        left: 220px;
+    }
+
 }
+
 @media only screen and (max-width: 375px) {
     body {
         background-size: 375px 554px;
     }
 }
+
 @media only screen and (min-width: 321px) {
     .container {
         max-width: 300px;
@@ -160,6 +167,10 @@ body {
 
     .main button {
         padding: 10px 25px;
+    }
+
+    #list_container li span{
+        left: 250px;
     }
 }
 
@@ -193,6 +204,10 @@ body {
 
     .main button {
         padding: 15px 30px;
+    }
+
+    #list_container li span{
+        left: 300px;
     }
 }
 @media only screen and (max-width: 1360px) {
